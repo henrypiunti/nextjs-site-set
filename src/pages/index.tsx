@@ -6,6 +6,7 @@ export default function Home() {
     <>
       <article className="flex flex-col">
         <HeroSection />
+        <FeatureSection />
       </article>
     </>
   );
