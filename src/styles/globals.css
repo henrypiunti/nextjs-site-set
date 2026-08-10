@@ -33,29 +33,29 @@
   --font-inter: 'Inter', sans-serif;
 
   /* Headings - PT Sans Caption */
-  --text-heading-hg: 48px;
-  --text-heading-hg--line-height: 120%;
-  --text-heading-hg--font-weight: 700;
+  --heading-hg: 48px;
+  --heading-hg--line-height: 120%;
+  --heading-hg--font-weight: 700;
 
-  --text-heading-xl: 32px;
-  --text-heading-xl--line-height: 120%;
-  --text-heading-xl--font-weight: 700;
+  --heading-xl: 32px;
+  --heading-xl--line-height: 120%;
+  --heading-xl--font-weight: 700;
 
-  --text-heading-lg: 28px;
-  --text-heading-lg--line-height: 120%;
-  --text-heading-lg--font-weight: 700;
+  --heading-lg: 28px;
+  --heading-lg--line-height: 120%;
+  --heading-lg--font-weight: 700;
 
-  --text-heading-md: 24px;
-  --text-heading-md--line-height: 120%;
-  --text-heading-md--font-weight: 700;
+  --heading-md: 24px;
+  --heading-md--line-height: 120%;
+  --heading-md--font-weight: 700;
 
-  --text-heading-sm: 20px;
-  --text-heading-sm--line-height: 120%;
-  --text-heading-sm--font-weight: 700;
+  --heading-sm: 20px;
+  --heading-sm--line-height: 120%;
+  --heading-sm--font-weight: 700;
 
-  --text-heading-xs: 16px;
-  --text-heading-xs--line-height: 120%;
-  --text-heading-xs--font-weight: 700;
+  --heading-xs: 16px;
+  --heading-xs--line-height: 120%;
+  --heading-xs--font-weight: 700;
 
   /* Body - Inter */
   --text-body-md: 16px;
@@ -82,4 +82,51 @@
   --text-action-sm: 14px;
   --text-action-sm--line-height: normal;
   --text-action-sm--font-weight: 500;
+}
+
+/*
+ * `--text-*` no @theme só embute font-size/line-height/font-weight, não font-family.
+ * Por isso os tamanhos de heading são utilities próprias, já com font-sans embutido,
+ * para não depender de lembrar de aplicar font-sans em todo uso.
+ */
+@utility text-heading-hg {
+  font-family: var(--font-sans);
+  font-size: var(--heading-hg);
+  line-height: var(--heading-hg--line-height);
+  font-weight: var(--heading-hg--font-weight);
+}
+
+@utility text-heading-xl {
+  font-family: var(--font-sans);
+  font-size: var(--heading-xl);
+  line-height: var(--heading-xl--line-height);
+  font-weight: var(--heading-xl--font-weight);
+}
+
+@utility text-heading-lg {
+  font-family: var(--font-sans);
+  font-size: var(--heading-lg);
+  line-height: var(--heading-lg--line-height);
+  font-weight: var(--heading-lg--font-weight);
+}
+
+@utility text-heading-md {
+  font-family: var(--font-sans);
+  font-size: var(--heading-md);
+  line-height: var(--heading-md--line-height);
+  font-weight: var(--heading-md--font-weight);
+}
+
+@utility text-heading-sm {
+  font-family: var(--font-sans);
+  font-size: var(--heading-sm);
+  line-height: var(--heading-sm--line-height);
+  font-weight: var(--heading-sm--font-weight);
+}
+
+@utility text-heading-xs {
+  font-family: var(--font-sans);
+  font-size: var(--heading-xs);
+  line-height: var(--heading-xs--line-height);
+  font-weight: var(--heading-xs--font-weight);
 }
