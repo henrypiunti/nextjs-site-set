@@ -1,13 +1,13 @@
+import { Button } from '@/components/ui/button';
 import { ArrowRight, Clock, Store } from 'lucide-react';
 import Image from 'next/image';
-import { Button } from '../ui/button';
 
 export function HeroSection() {
   return (
     <section className="flex">
-      <div className="flex flex-1 flex-col items-center gap-10 pt-8 pb-10 lg:items-start lg:gap-14 lg:px-50 lg:py-20">
+      <div className="flex flex-1 flex-col items-center gap-10 px-4 pt-8 pb-10 lg:items-start lg:gap-14 lg:px-50 lg:py-20">
         <div className="flex flex-col items-center gap-6 text-center lg:items-start lg:gap-8 lg:text-start">
-          <h1 className="text-heading-lg md:text-heading-hg w-89.5 text-gray-100 lg:w-auto">
+          <h1 className="text-heading-lg md:text-heading-hg text-gray-100 lg:w-auto">
             Venda seus produtos como afiliado em um único lugar
           </h1>
           <div className="flex flex-col gap-2">

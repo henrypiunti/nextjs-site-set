@@ -1,4 +1,4 @@
-import { CustomerStoryCard } from '../customer-story-card';
+import { CustomerStoryCard } from './customer-story-card';
 
 export function CustomerStorySection() {
   return (

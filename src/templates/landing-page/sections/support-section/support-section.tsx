@@ -1,5 +1,5 @@
 import { HeartHandshake, PaintbrushVertical, Store } from 'lucide-react';
-import { SupportCard } from '../support-card';
+import { SupportCard } from './support-card';
 
 export function SupportSection() {
   return (

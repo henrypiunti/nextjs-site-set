@@ -1,5 +1,5 @@
-import { Footer } from '../footer';
-import { Header } from '../header';
+import { Footer } from './footer';
+import { Header } from './header';
 import { Inter, PT_Sans_Caption } from 'next/font/google';
 
 type LayoutProps = {
@@ -20,9 +20,7 @@ const ptSansCaption = PT_Sans_Caption({
 
 export function Layout({ children }: LayoutProps) {
   return (
-    <div
-      className={`${inter.className} ${ptSansCaption.variable} flex min-h-screen flex-col bg-gray-700`}
-    >
+    <div className={`${inter.className} ${ptSansCaption.variable} flex min-h-screen flex-col bg-gray-700`}>
       <Header />
       <main className="flex flex-1 flex-col">{children}</main>
       <Footer />
